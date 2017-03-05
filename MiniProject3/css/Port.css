@@ -125,7 +125,8 @@ div.photo img{
 }
 /*Animation cycles through images without a start promptt and skpis through some in a hurry
 z0idex set to bring certain images to the frontground at the specified interval. 
-nth-child is is psuedo selector that calls the method on that child*/
+nth-child is is psuedo selector that calls the method on that child. 
+Reference: https://codepen.io/fcalderan/pen/jqpzd?editors=0110*/
 .photo img:nth-child(6) {
   z-index: 2;
   animation: slideshow 20s linear 4s infinite;
