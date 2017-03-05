@@ -1,0 +1,137 @@
+
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansInline-Regular.otf);
+}
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSans-Light.otf);
+}
+@font-face {
+  
+    font-family:LeagueGothic;
+  
+    src: url(theleagueof-league-gothic-64c3ede/LeagueGothic-Regular.otf);
+}
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansDashed-Medium.otf);
+}
+/* thesame as the previous pages until the h1 tag. For some reason the menu
+does not highlight right away and you have to search for the anchor with your mouse.
+Issue to be fixed */
+body{
+
+background-image:url(css-images/large.jpg);
+
+}
+ul{
+  padding-left:50px;
+  text-align:right;
+}
+li{ 
+  font-family:'LeagueGothic',serif;
+    font-size:10px;
+  display:inline-block;
+  background:black;
+  width:150px;
+  height:60px;
+  text-align:center;
+  color:white;
+  line-height:30px;
+  margin:-2px;
+  padding:5px;
+  transition: background 0.1s linear;    
+   border-radius: 1s ease-in 1s;
+}
+li a{
+  display:inline-block;
+  padding:30px;
+  position:relative;
+  top:-10px;
+    font-size:50px;
+    list-style-type: none;
+     text-decoration: none;
+    color:grey;
+  }
+
+
+
+li:hover{
+  background:white;
+  color:black;
+
+  transition:2s;
+   cursor:pointer;
+}
+.menu{
+
+  background-color:rgba(0,0,0,0.9);
+  position:absolute;
+  top:-15px;
+  right:0;
+  width:1600px;
+  padding:5px;
+}
+
+h1{
+   font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  bottom:50px;
+  left:100px;
+}
+/* To change the text on the form. Changed the font-family and the font-size. The rest is from W3 schools */
+input[type=text], select {
+     font-family:'LeagueGothic';
+     font-size:20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* To change the text on the form. Changed the font-family and the font-size. Also changed the background-color. The rest is from W3 schools */
+input[type=submit] {
+     font-family:'LeagueGothic';
+    width: 100%;
+    background-color: #8c8c8c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Changes the color that appears when you hover over the button to black.Copied from w3 schools*/
+input[type=submit]:hover {
+    background-color: black;
+}
+/* changes the container that contains the form. Reduced the width and aligned it to relative center using positining */
+div form{
+  position:relative;
+  top:-60px;
+  left:400px;
+  width:700px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255,0.7);
+    padding: 20px;
+}
+/* changes the heading of the page by its color and positioning */
+h1.ok {
+  font-size:100px;
+  position:relative;
+  left:600px;
+  color:white;
+  opacity:0.8;
+}

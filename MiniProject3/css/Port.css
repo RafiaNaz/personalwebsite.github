@@ -1,0 +1,228 @@
+
+@font-face {
+  
+    font-family:LeagueGothic;
+  
+    src: url(theleagueof-league-gothic-64c3ede/LeagueGothic-Regular.otf);
+}
+/* Called the font-family that I wish to use */
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansDashed-Medium.otf);
+}
+body{
+
+background-image:url(css-images/omg.jpg);
+
+
+}
+/* Similar to the rest of the website except for the menu being unresponsive. 
+Perhaps its due to inheritence issues with transitions used in the div contaienr below with animation keyframes? */
+.menu{
+  background-color:rgba(0,0,0,0.9);
+  position:absolute;
+  top:-15px;
+  right:0;
+  width:1600px;
+  padding:20px;
+  font-size:10px;
+}
+
+ul{
+  padding-left:50px;
+  text-align:right;
+}
+
+li{ 
+  font-family:'LeagueGothic';
+    font-size:10px;
+  display:inline-block;
+  background:black;
+  width:150px;
+  height:50px;
+  text-align:center;
+  color:white;
+  line-height:40px;
+  margin:-2px;
+  padding:5px;
+  transition: background 1s linear;    
+   border-radius:1s ease-in 1s;
+}
+
+li a{
+  display:inline-block;
+  padding:30px;
+  position:relative;
+  top:-10px;
+    font-size:50px;
+    list-style-type: none;
+     text-decoration: none;
+    color:grey;
+  }
+
+li a:hover{
+  background:white;
+  color:black;
+  transition:0.5s;
+   cursor:pointer;
+}
+h1{
+   font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  bottom:30px;
+  left:100px;
+}
+/* formats the div container that holds the two images contaienrs. Use it to align and center the main container*/
+div.con{
+  margin:5px;
+  position:relative;
+  text-align:center;
+
+}
+/* Formats the contaienr for photography. Is set to display-inline inorder to 
+have the photography containers next to one another with a set height and width*/
+.photo{
+  display:inline-block;
+  background-color:black;
+  
+      width:700px;
+      height:800px;
+      overflow:hidden;
+      border-radius:10px;
+      margin:5px;
+      box-shadow: -116px 0px 80px -29px rgba(0,0,0,0.28);
+
+
+} 
+/*Container set yo relative so as to align the images within the div container*/
+div{
+  position:relative;
+}   
+/*Changes the images within the container. Name and captions to the images to be added.Animation set to apused initially.
+ Perhaps using Keyframes animation was less effective than using iframe and the next prev tags from javascript?
+ Animation slideshow used to decrease the amount of steps but not working properly. 
+ Sally helping with debugging*/
+
+div.photo img{
+  position:absolute;
+  top:0;
+  left:0;
+  height: 800px;
+  width:700px;
+  z-index: 3;
+  animation: slideshow 12s linear 0s infinite;
+  animation-play-state: paused; 
+}
+/*Is used to initate the slide animation when user hover over the image, but it does not seem to be working*/
+.photo:hover img{
+  animation-play-state:running; 
+
+}
+/*Animation cycles through images without a start promptt and skpis through some in a hurry
+z0idex set to bring certain images to the frontground at the specified interval. 
+nth-child is is psuedo selector that calls the method on that child*/
+.photo img:nth-child(6) {
+  z-index: 2;
+  animation: slideshow 20s linear 4s infinite;
+}
+.photo img:nth-child(5) {
+  z-index: 2;
+  animation: slideshow 20s linear 4s infinite;
+}
+.photo img:nth-child(4) {
+  z-index: 2;
+  animation: slideshow 20s linear 4s infinite;
+}
+.photo img:nth-child(3) {
+  z-index: 2;
+  animation: slideshow 20s linear 4s infinite;
+}
+.photo img:nth-child(2) {
+  z-index: 2;
+  animation: slideshow 20s linear 4s infinite;
+}
+
+.photo img:nth-child(1) {
+  z-index: 7;
+  animation: slideshow 20s linear 4s infinite;
+}
+
+/* Keyframe slideshow that runs the animation in intervals and opacity set to ease in the image to the next*/
+
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+/*
+Steps applied above for the .photo calss are also 
+applied tot he .astro class but with different images and 
+a differnt slideshow name. perhaps that is the issue?
+*/
+.astro{
+      display:inline-block;
+      background-color:black;
+      width:700px;
+      height:800px;
+      overflow:hidden;
+      margin:10px;
+      border-radius:10px;
+      box-shadow: 62px -46px 80px -29px rgba(0,0,0,0.28);
+
+}
+
+div.astro img{
+  position:absolute;
+  top:0;
+  left:0;
+  animation-play-state: paused; 
+  height: 800px;
+  width:700px;
+  z-index: 3;
+  animation: slide 12s linear 0s infinite;
+}
+.astro:hover img{
+  animation-play-state:running; 
+}
+
+
+.astro img:nth-child(1) {
+  z-index: 6;
+  animation: slide 12s linear 4s infinite;
+}
+
+.astro img:nth-child(2) {
+  z-index: 5;
+  animation: slide 20s linear 4s infinite;
+}
+.astro img:nth-child(3) {
+  z-index: 4;
+  animation: slide 20s linear 4s infinite;
+}
+.astro img:nth-child(4) {
+  z-index: 3;
+  animation: slide 20s linear 4s infinite;
+}
+.astro img:nth-child(5) {
+  z-index: 2;
+  animation: slide 20s linear 4s infinite;
+}
+.astro img:nth-child(6) {
+  z-index: 1;
+  animation: slide 20s linear 4s infinite;
+}
+
+@keyframes slide {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+    150% { opacity: 0;}
+     200% { opacity: 1;}
+}

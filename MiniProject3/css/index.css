@@ -1,0 +1,117 @@
+/*  */
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansInline-Regular.otf);
+}
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSans-Light.otf);
+}
+@font-face {
+  
+    font-family:LeagueGothic;
+  
+    src: url(theleagueof-league-gothic-64c3ede/LeagueGothic-Regular.otf);
+}
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansDashed-Medium.otf);
+}
+/* assigned a background=image to the page. THis changes with each page */
+body{
+
+background-image:url(css-images/code.jpg);
+
+}
+/* the formatting for the entire menu list */
+ul{
+  padding-left:50px;
+  text-align:right;
+}
+/* formating for each container within the list. Added transition to make the menu more attractive. Added positioning to align it witin the menu */
+li{ 
+  font-family:'LeagueGothic',serif;
+    font-size:10px;
+  display:inline-block;
+  background:black;
+  width:150px;
+  height:50px;
+  text-align:center;
+  color:white;
+  line-height:40px;
+  margin:-2px;
+  padding:5px;
+  text-decoration: none;
+  transition: background 2s linear;    
+   border-radius 1s ease-in 1s;
+}
+/* Code to modify the text of the links  */
+li a{
+  display:inline-block;
+  padding:30px;
+  position:relative;
+  top:-10px;
+    font-size:50px;
+    list-style-type: none;
+     text-decoration: none;
+    color:grey;
+  }
+
+/* Added transition from black background to white with user hover */
+li a:hover{
+  background:white;
+  color:black;
+
+  transition:2s;
+   cursor:pointer;
+}
+/* used to modify the black header bar at the top. Used positioning to flush it to the top of the page.  */
+.menu{
+  background-color:rgba(0,0,0,0.9);
+  position:absolute;
+  top:-15px;
+  right:0;
+  width:1600px;
+  padding:20px;
+  font-size:10px;
+}
+/* Modified the container that has the welsome message by rounding its radius and adding a slight box shadow */
+div.kiki{
+position:relative;
+top:200px;
+left:550px;
+width:500px;
+height:500px;
+border-radius:360px;
+box-shadow: 1px 1px 1px #595959;
+background-color:rgba(0,0,0,0.9);
+}
+
+/*Positined the name to the top of the page by ripping it out of the div  and movin it up. Poor design desiion to have it in the body and connected
+to the div.Now if we modify the div kiki class through positioning, we also modify the position of the name */
+h1{
+   font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  bottom:250px;
+  left:-300px;
+}
+/* Code to modify the greeting and center it within the div container */
+p{
+  font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:90px;
+  width:500px;
+  text-align:center;
+  position:relative;
+  color:#595959;
+}
+

@@ -1,0 +1,38 @@
+
+body{
+background-image:url();
+}
+
+ul{
+  padding-left:50px;
+  text-align:center;
+}
+li{ 
+  display:inline-block;
+  background:cyan;
+  width:120px;
+  height:50px;
+  text-align:top-center;
+  color:black;
+  line-height:50px;
+  margin:auto;
+  transition: background 2s linear;     border-radius 1s ease-in 1s;
+}
+li a{
+  display:inline-block;
+  padding:15px;
+  position:realtive;
+  top:20px;
+  }
+li:hover{
+  colour:red;
+  background-color:grey;
+  cursor:pointer;
+    }
+
+li:hover{
+  background:black;
+  color:white;
+  border-radius:10%;
+  transition:2s;
+}

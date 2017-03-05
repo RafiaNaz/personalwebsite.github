@@ -1,0 +1,314 @@
+
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansInline-Regular.otf);
+}
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSans-Light.otf);
+}
+@font-face {
+  
+    font-family:LeagueGothic;
+  
+    src: url(theleagueof-league-gothic-64c3ede/LeagueGothic-Regular.otf);
+}
+@font-face {
+  
+    font-family:ostrich-sans-master;
+  
+    src: url(ostrich-sans-master/OstrichSansDashed-Medium.otf);
+}
+body{
+
+background-image:url(css-images/cir.jpg);
+
+}
+/* Menu same as with tthe index code. have trouble getting it to work sometimes */
+
+ul{
+  padding-left:50px;
+  text-align:right;
+}
+li{ 
+  font-family:'LeagueGothic',serif;
+    font-size:10px;
+  display:inline-block;
+  background:black;
+  width:150px;
+  height:50px;
+  text-align:center;
+  color:white;
+  line-height:40px;
+  margin:-2px;
+  padding:5px;
+  transition: background 2s linear;    
+   border-radius 1s ease-in 1s;
+}
+li a{
+  display:inline-block;
+  padding:30px;
+  position:relative;
+  top:-20px;
+    font-size:50px;
+    list-style-type: none;
+     text-decoration: none;
+    color:grey;
+  }
+
+
+li:hover{
+  background:white;
+  color:black;
+  transition:2s;
+   cursor:pointer;
+}
+
+.menu{
+  background-color:rgba(0,0,0,0.9);
+  position:absolute;
+  top:-15px;
+  right:0;
+  width:1600px;
+  padding:5px;
+}
+/* Modifyed the greeting container and attached it to a personal photo */
+div.kiki{
+position:relative;
+top:50px;
+left:80px;
+width:300px;
+height:300px;
+border-radius:360px;
+box-shadow: 1px 1px 1px #595959;
+background-color:rgba(255,255,255,0.9);
+}
+
+
+h1{
+   font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  bottom:100px;
+  left:100px;
+}
+/* Code to modify the picture ance center it within the div folder by using positioning */
+.kiki img{
+  
+  
+  text-align:center;
+  width:300px;
+  height:300px;
+  position:relative;
+  bottom:120px;
+  color:#595959;
+  border-radius:360px;
+}
+/* Modifyed the entire progress container with all the skills. Just used it for positioning  */
+.progress{
+  width:600px;
+  position:relative;
+  left:500px;
+  top:-300px;
+  margin-bottom:20px;
+
+
+}
+
+/*  Modifyed the heading title above the progress*/
+.progress h1{
+   font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  top:-5px;
+  left:-10px;
+}
+/* Code to format each div container for each skill. Calling them together ensures that they are all aligned */
+.css,.java,.C,.JavaScript,.SQl{
+  display:block;
+  width:1000px;
+  height:50px;
+  margin-bottom:20px;
+  transition-timing-function:ease-in;
+  background-color:white;
+}
+/* Code to format the name of each skill and ensure that they are all aligned within the white div containers*/
+.progress h2{
+  font-family:'LeagueGothic';
+   font-size:30px;
+  z-index:1; 
+  text-align:left;
+  line-height:-10px;
+  padding:2px;
+}
+/*Code for the level of skill I have, such as beginner, intermediate and advanced. lost the level on the SQL    */
+.progress p{
+  font-family:'LeagueGothic';
+  font-size:30px;
+  z-index:1; 
+  position:relative;
+  top:-50px;
+  text-align:center;
+  line-height:5px;
+}
+/* Code to format the overlay and position it so each overlay is on top of the skill div container. 
+When on top, change the width, color and opacity to create a progress bar. Better methods to create this feature but 
+this was the most convinient */
+div.ida{
+  position:relative;
+  left:-1px;
+  top:-146px;
+display:block;
+  width:500px;
+  height:50px;
+  margin-bottom:20px;
+   background-color:red;
+   z-index:1;
+   opacity:0.3;
+
+}
+
+div.id{
+  position:relative;
+  left:-1px;
+  top:-71px;
+display:block;
+  width:900px;
+  height:50px;
+  margin-bottom:20px;
+   background-color:blue;
+   z-index:1;
+   opacity:0.3;
+}
+
+div.idw{
+  position:relative;
+  left:-1px;
+  top:-71px;
+display:block;
+  width:900px;
+  height:50px;
+  margin-bottom:20px;
+   background-color:salmon;
+   z-index:1;
+   opacity:0.3;
+}
+
+div.idl{
+  position:relative;
+ left:-1px;
+  top:-71px;
+display:block;
+  width:600px;
+  height:50px;
+  margin-bottom:20px;
+   background-color:green;
+   z-index:1;
+   opacity:0.3;
+  }
+
+  div.idk{
+    position:relative;
+  left:-1px;
+  top:4.5px;
+display:block;
+  width:500px;
+  height:50px;
+  margin-bottom:20px;
+   background-color:yellow;
+   opacity:0.3;
+   z-index:1;
+  }
+  /*Start of the projects section. Modifies the heading forprojects in work */
+  .intrests h1{
+    font-family:'LeagueGothic';
+  z-index:1; 
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  top:-300px;
+  left:900px;
+  }
+  /* Modifies the discription of projects in work all together*/
+  .intrests h3{
+    font-family:'LeagueGothic';
+    display:inline-block;
+  z-index:1; 
+  left:-90px;
+  font-size:60px;
+  position:relative;
+  color:#595959;
+  top:-300px;
+  left:900px;
+  }
+  /* Formats all three images together within the container  */
+
+  .intrests img{
+    display:inline-block;
+    position:relative;
+    float:left;
+    top:-300px;
+    left:430px;
+    width:100px;
+    height:100px;
+  }
+  /*Formats the image for programming within the container   */
+  .code img{
+    display:inline-block;
+    float:left;
+    width:100px;
+    height:100px;
+  }
+  /*Formats the image for game development within the container   */
+  .game img{
+    display:inline-block;
+    float:left;
+    position:relative;
+    left:500px;
+  
+    width:100px;
+    height:100px;
+  }
+  /*Formats the image for astrophotography within the container   */
+  .star img{
+    display:inline-block;
+    float:left;
+    position:relative;
+    left:400px;
+
+    width:100px;
+    height:100px;
+  }
+  /* Formats the discription of the projects individually  */
+
+  .code h3{
+    display:inline-block;
+    float:left;
+    position:relative;
+      font-size:40px;
+      color:white;
+  }
+  .game h3{
+    display:inline-block;
+    float:left;
+    position:relative;
+    left:600px;
+    top:-200px;
+      font-size:40px;
+      color:white;
+  }
+  .star h3{
+    display:inline-block;
+    float:left;
+    position:relative;
+      font-size:40px;
+      color:white;
+  }
